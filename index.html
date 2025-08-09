@@ -1,17 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>corrida</title>
-   
+    <title>formulario</title>
+  <link rel="stylesheet" href="style.css">
+  <style>body{background-color: rgb(204, 180, 180);}
+    
+  </style>
 </head>
 <body>
-    <h1>corrida</h1>
-    <p><a href="https://www.youtube.com/"target='_blank'><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="Youtube_logo" width="100"
-        valeu="youtube"></a></p
-        
-    ><p><a href="paginasecundaria.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzJK_1VUtg_RzznGUX7AvmS-KjVzAVoqLbg&s" alt="paginasecundaria"width="100"target='_blank'></a></p>
-        <p>titulo  </p>
+    <div class="container">
+        <div class="formulario">
+            formulario
+        </div>  
+    </div>   
+   <form >
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="digite seu nome" required >
+     <br>
+        <label for="idade">idade:</label>
+        <input type="number" name="idade" placeholder="sua idade"required>
+    <br> 
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="digite seu email" required>
+    <br> 
+        <label for="Telefone">Telefone:</label>
+        <input type="tel" name="Telefone" placeholder="(99)9999-9999">
+        <br>
+        <label for="cidade">nome da cidade:</label>
+            <select name="nome da cidade:" >
+                <option value="Rio de Janeiro">rio de Janeiro</option>
+                <option value="Minas Gerais">minas Gerais</option>
+                <option value="Sao paulo">sao paulo</option>
+                <option value="Baiha">Baiha</option>
+        </select>
+   <hr> 
+    <label for="sexo">Sexo:</label>
+    <input type="radio"name="sexo" value="Masculino">Masculino
+    <input type="radio" name="sexo" value="feminino">feminino
+    <input type="radio"name="sexo" value="outros">outros
+   </form>
+   <hr>
+   <form >
+    <label for="nome">Nome da Mae:</label>
+    <input type="text" name="nome da Mae" placeholder="digite nome da Mae">
+    <label for="nome">Nome do pai:</label>
+    <input type="text" name="nome do pai"placeholder="digite nome do pai">
+   </form>
+   <hr>
+   <div class="container">
+        <div class="Gostos">
+            Gostos
+        </div>     
+    </div>
+   <form >
+    <label for="Gostos">Esporte:</label>
+    <input type="checkbox" name="Gostos"value="Esporte">Esporte
+    <input type="checkbox" name="Gostos"value="musica">musica
+    <input type="checkbox" name="Gostos"value="arte">arte
+    <input type="checkbox" name="Gostos"value="natação">natação
+    <input type="checkbox" name="Gostos"value="corrida">corrida
+    <input type="checkbox" name="Gostos"value="leitura">leitura
+    <input type="checkbox" name="Gostos"value="tecnoligia">tecnoligia
+    <input type="checkbox" name="Gostos"value="viajar">viajar
+    <input type="checkbox" name="Gostos"value="escrever">escrever
+    <input type="checkbox" name="Gostos"value="estudar">estudar
+             
+
+   <br>
+    <label for="cor"></label>Cor preferida:
+      <select name="cor" >
+        <option value="vermelho">vermelho</option>
+        <option value="azul">azul</option>
+        <option value="verde">verde</option>
+        <option value="amarelo">amarelo</option>
+      </select>
+      <hr>
+      <label for="sugestao">Ideais:</label>
+        <textarea name="sugestao"cols="30"Rows="4" placeholder="ideias"></textarea>
+<hr>
+<input type="submit" name="enviar" value="enviar">
+<input type="reset" name="limpar" value="limpar" >
+   </form>
+   
 </body>
 </html>
